@@ -18,7 +18,7 @@ actions:
         files:
           - /jmeter
           - /jmeter_plugins
-        image: "docker.io/jjustb4/jmeter:5.5"
+        image: "docker.io/jenaja/jmeter:latest"
         args:
           - '-n'
           - '-t'
