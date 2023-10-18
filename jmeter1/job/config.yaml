@@ -6,13 +6,13 @@ actions:
 
     tasks:
       - name: "Jmeter tests started"
-        resources:
-          limits:
-            cpu: 1
-            memory: 1028Mi
-          requests:
-            cpu: 100m
-            memory: 256Mi
+        # resources:
+        #   limits:
+        #     cpu: 1
+        #     memory: 1028Mi
+        #   requests:
+        #     cpu: 100m
+        #     memory: 256Mi
         maxPollDuration: 3600
 
         files:
