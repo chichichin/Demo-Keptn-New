@@ -3,11 +3,11 @@ actions:
   - name: "Run JMeter"
     events:
       - name: "sh.keptn.event.test.triggered"
-        jsonpath:
-          property: "$.data.test.teststrategy"
-          match: "performance"
+        # jsonpath:
+        #   property: "$.data.test.teststrategy"
+        #   match: "performance"
     tasks:
-      - name: "Run jmeter smoke tests"
+      - name: "Jmeter tests started"
         files:
           - jmeter/blazedemo.jmx
         image: "docker.io/yourorg/jmeter:latest"
